@@ -1,0 +1,23 @@
+<html>
+<title>Timeout Program</title>
+<body bgcolor=cyan text=red>
+<h1 align=center>Timeout Program</h1>
+<script language="javascript">
+function setTimer()
+{
+timer=setTimeout('alert("Too Slow!!try Again")',5000)
+}
+function clearTimer()
+{
+clearTimeout(timer)
+alert("Congratulations!!You Have Done")
+alert("to Try Again Press F5-Refresh")
+}
+setTimer()
+</script>
+
+<form>
+<input type=button value="Click Here With In Five Seconds" onClick="clearTimer()">
+</form>
+</body>
+</html>

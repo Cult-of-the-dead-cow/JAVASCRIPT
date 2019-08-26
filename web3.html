@@ -1,0 +1,113 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+
+<body>
+<div style="width:1350px;height:180px;position:absolute;background-color:black">
+<center>
+<font color="#C70039" size=15px>
+<h1><i>Glories</i></h1>
+</font>
+</center>
+</div>
+
+<div style="width:200px;height:800px;position:absolute;top:180px">
+
+<div class="w3-content w3-display-container" >
+
+<div class="w3-display-container mySlides">
+  
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+   
+  </div>
+</div>
+
+
+<div style="width:1090px;height:800px;position:absolute;top:5px;">
+
+<div class="w3-content w3-display-container" >
+
+<div class="w3-display-container mySlides1">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\bride3.jpg" width="1350px" height="900px">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    <a href="makeup.html"><b>Bridal Makeover<b></a>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides1">
+
+  <marquee behavior = "alternate">
+  <font color="red" size=7px face="Brush Script MT"> 
+ A man's got two shots for jewellery: A wedding ring and a watch. The watch is a lot easier to get on and off than a wedding ring...
+ </font>
+  </marquee>
+
+
+
+  <img src="C:\Users\dell\Pictures\Saved Pictures\ring.jpg" width="1350px" height="900px">
+  
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+   <a href="ring.html"><b>Ceremony Organizing<b></a>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides1">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\wed3.jpg" width="1350px" height="900px">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+   <a href="food.html"><b>Catering...</b></a>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides1">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\man1.jpg" width="1350px" height="900px">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Groom Makeover
+  </div>
+</div>
+
+<div class="w3-display-container mySlides1">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\game7.jpg" width="1350px" height="900px">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+   <a href="games.html"> Wedding games </a>
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+function showDivs1(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+</script>
+
+</body>
+</html>

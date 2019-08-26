@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Wedding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/lib/w3.css">
+
+</head>
+<body bgcolor="black">
+<center>
+<font color="Red" size=10px>
+<h1><i>Glories</i></h1>
+</font>
+</center>
+<div  class="w3-container">
+  <h1>Wedding Ceremony</h1>
+  <font color="Red" size=6px>
+  <marquee direction="Left">
+  A man's got two shots for jewellery: A wedding ring and a watch. The watch is a lot easier to get on and off than a wedding ring...
+  </marquee>
+</font>
+</div>
+
+
+<div class="w3-content w3-display-container" >
+
+<div class="w3-display-container mySlides">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\w12.jpg" width="1350" height="800">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Bridal Makeover
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\wed2.jpg" width="1350" height="800">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+   Ring Ceremony
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\wed3.jpg" width="1350" height="1000">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Wedding Cakes
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="C:\Users\dell\Pictures\Saved Pictures\man1.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    The Groom 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img5.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Mountains!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
