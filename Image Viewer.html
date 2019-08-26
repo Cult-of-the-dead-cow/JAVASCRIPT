@@ -1,0 +1,38 @@
+<html>
+<title>Images Viewer</title>
+<body bgcolor=cyan text=red>
+<script language="javascript">
+function show()
+{
+pict=document.f1.picture.value
+wid=document.f1.width.value
+hei=document.f1.height.value
+bor=document.f1.border.value
+tt=document.f1.tooltip.value
+
+document.pic.src=pict
+document.pic.width=wid
+document.pic.height=hei
+document.pic.border=bor
+document.pic.alt=tt
+}
+</script>
+<h1 align=center>Image Viewer</h1>
+<h3 align=center>Image Properties</h3>
+<center>
+<form name=f1>
+File Name:<input type=file name=picture size=40><br><br>
+Width: <input type=text name=width size=4><br><br>
+Height: <input type=text name=height size=4><br><br>
+Border: <input type=text name=border size=4><br><br>
+Tooltip: <input type=text name=tooltip size=4><br><br>
+
+<input type=button value="View Image" onClick="show()">
+<input type=reset>
+</form>
+
+<img name=pic>
+<h4>Image Will Show Here</h4>
+</center>
+</body>
+</html>

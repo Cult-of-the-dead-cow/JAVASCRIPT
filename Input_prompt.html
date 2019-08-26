@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>ff</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var a,b,c,d;
+var name;
+name=prompt("enter name ");
+a=parseInt(prompt("enter a "));
+b=parseInt(prompt("enter b "));
+d=parseInt(prompt("enter d "));
+c=a>b && b>d;
+document.write("name is "+name);
+
+document.write("<br>a is "+a);
+document.write("<br>b is "+b);
+document.write("<br>d is "+d);
+document.write("<br>AND is "+c);
+c=a>b || b>d;
+document.write("<br>OR is "+c);
+c=!(a>b || b>d);
+document.write("<br>NOT is "+c);
+document.write("<br>!("+a+">"+b+"||"+b+">"+d+")="+c);
+</script>
+</body>
+</html>

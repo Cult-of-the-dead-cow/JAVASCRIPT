@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+var myWindow;
+function openWin()
+{
+myWindow=window.open("Array.html","my new Window","width=400, height=200");
+}
+function closeWin()
+{
+if(myWindow)
+{
+myWindow.close();
+}
+}
+</script>
+</head>
+<body>
+<button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+<br>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+div{
+border: 1px solid black:
+margin: 5px; 
+}
+</style>
+</head>
+<body>
+<div id="myDIV">
+<p>First p elements in div.</p>
+<p>Another p elements in div.</p>
+<p>Third p elements in div.</p>
+</div>
+<p>Click the button to change the HTML content of the first p elements inside div</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction()
+{
+var div=document.getElementById("myDIV");
+div.getElementsByTagName("P")[0].innerHTML="Hello World";
+div.getElementsByTagName("P")[1].innerHTML="Changed";
+}
+</script>
+</body>
+</html>

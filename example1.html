@@ -1,0 +1,15 @@
+<html>
+<body>
+<p>Hello</p>
+<button onclick="myFunction()">Try it</button>
+<p id="d"></p>
+<script>
+function myFunction()
+{
+var c=document.getElementByTagName("button")[0];
+var x=c.childNodes[0].nodeValue;
+document.getElementById("d").innerHTML = x;
+}
+</script>
+</body>
+</html>
